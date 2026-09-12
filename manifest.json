@@ -1,0 +1,9 @@
+{
+  "name":"PROPERTY 360 — AP Property Verification",
+  "short_name":"PROPERTY 360",
+  "start_url":".",
+  "display":"standalone",
+  "background_color":"#f7f8fa",
+  "theme_color":"#102a43",
+  "description":"Property verification and real-estate CRM for Andhra Pradesh."
+}
