@@ -17,7 +17,18 @@ function save() {
 }
 
 function portal(name) {
-  window.open(portals[name], "_blank", "noopener,noreferrer");
+  const url = portals[name];
+  if (!url) return;
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.style.display = "none";
+
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 }
 
 function shell(title, body) {
